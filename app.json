@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "ExpenseTracker",
+    "slug": "ExpenseTracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Exp_Tracker.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/Exp_Tracker.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Exp_Tracker.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.mohit0102.ExpenseTracker"
+    },
+    "web": {
+      "Exp_Tracker": "./assets/Exp_Tracker.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9d4ba390-1070-459c-812a-b49dabc2c8eb"
+      }
+    }
+  }
+}
