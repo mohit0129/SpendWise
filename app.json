@@ -2,7 +2,7 @@
   "expo": {
     "name": "ExpenseTracker",
     "slug": "ExpenseTracker",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/Exp_Tracker.png",
     "userInterfaceStyle": "light",
@@ -13,15 +13,45 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "background-processing",
+          "background-fetch"
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/Exp_Tracker.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.mohit0102.ExpenseTracker"
+      "package": "com.mohit0102.ExpenseTracker",
+      "permissions": [
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM"
+      ]
     },
+    "notification": {
+      "icon": "./assets/Exp_Tracker.png",
+      "color": "#007bff",
+      "iosDisplayInForeground": true,
+      "androidMode": "default",
+      "androidCollapsedTitle": "💰 Expense Tracker"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/Exp_Tracker.png",
+          "color": "#007bff",
+          "mode": "production"
+        }
+      ]
+    ],
     "web": {
       "Exp_Tracker": "./assets/Exp_Tracker.png"
     },
